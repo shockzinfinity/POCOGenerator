@@ -28,7 +28,7 @@
     <!-- added in Version 1.0.4 -->
     <ILMergeFileAlignment></ILMergeFileAlignment>
 
-    <!-- added in Version 1.0.4, all values are true/false -->
+    <!-- added in Version 1.0.4, default=none -->
     <ILMergeAllowDuplicateType></ILMergeAllowDuplicateType>
 
     <!-- If the <see cref="CopyAttributes"/> is also set, any assembly-level attributes names that have the same type are copied over into the target assembly -->
@@ -48,6 +48,9 @@
 
     <!-- Types in assemblies other than the primary assembly have their visibility modified -->
     <ILMergeInternalize></ILMergeInternalize>
+
+    <!-- The path name of the file that will be used to identify types that are not to have their visibility modified -->
+    <ILMergeInternalizeExcludeFile></ILMergeInternalizeExcludeFile>
 
     <!-- XML documentation files are merged to produce an XML documentation file for the target assembly -->
     <ILMergeXmlDocumentation></ILMergeXmlDocumentation>
